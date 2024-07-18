@@ -3,6 +3,8 @@
 #include <limits.h>
 using namespace std;
 
+// TC - O(n log n)
+// SC - O(1)
 int minDiff(int arr[], int n, int m) {
   sort(arr, arr+n);
   int diff = INT_MAX;
