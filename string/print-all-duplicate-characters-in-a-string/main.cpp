@@ -10,7 +10,8 @@ void printDups(string s) {
         ump[c]++;
 
     for (auto it : ump) {
-        cout << it.first << " -> " << it.second << endl;
+        if(it.second > 1)
+            cout << it.first << " -> " << it.second << endl;
     }
 }
 
